@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: hsl(0, 100%, 50%);
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery video {
+            width: 600px;
+            height: auto;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .gallery video:hover {
+            transform: scale(1.5);
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2074a0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Video Gallery</h1>
+
+    <div class="gallery">
+        <video src="busu.mp4" autoplay muted controls loop></video>
+    </div>
+    <center><a href="aboutme.html">Homepage</a>&nbsp;
+    <a href="bungallery.html">Image Gallery</a></center>
+    
+</body>
+</html>
